@@ -51,10 +51,19 @@ $$
 
 ### 4. 姿态表示与旋转坐标变换
 
-四元数可以表示旋转，对一个姿态 $`p`$ 进行一次旋转，运算上相当于乘上该旋转的四元数：$`p \arrow p q`$
+四元数可以表示旋转，对一个姿态 $`p`$ 进行一次旋转，运算上相当于乘上该旋转的四元数：$`p \rightarrow p q`$
 
-通常用world系向body系的旋转 $`q_WB`$ 表示姿态
+一个坐标/一个向量 $`\vec{r}`$，若进行一次旋转，用四元数表示该坐标变换为：$`p(\vec{r}) \rightarrow q p(\vec{r}) q^{-1}`$
 
+其中 $`p(\vec{r})`$ 指的是将三维坐标扩展实部0，变为 $`[0 \quad \vec{r}]^T`$ 的伪四元数
+
+通常用world系向body系的旋转 $`q(q_WB)`$ 表示姿态
+
+！！！注意，“坐标”本身包含着“相对”的含义，因此对于world系和body系来说，分别理解 $`p(\vec{r}) \rightarrow q p(\vec{r}) q^{-1}`$ 的含义应该为：
+
+world系和body系重合时，world系下有坐标 $`\vec{r}`$ →→→ 机体进行了旋转 →→→ 原坐标仍在world系下表示变为 $`p(\vec{r}) \rightarrow q p(\vec{r}) q^{-1}`$
+
+world系和body系重合时，body系下有坐标 $`\vec{r}`$ →→→ 机体进行了旋转 →→→ 原坐标仍在body系下表示，相对关系未变，还是 $`\vec{r}`$ →→→ $`p(\vec{r}) \rightarrow q p(\vec{r}) q^{-1}`$ 表示body系下的坐标换到world系下表示
 
 
 
