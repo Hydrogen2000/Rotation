@@ -41,9 +41,14 @@ $$
 
 $$
 q_1 + q_2 = [w_1 + w_2 \quad x_1 + x_2 \quad y_1 + y_2 \quad z_1 + z_2]^T
+$$
 
-q_1 q_2 = [w_1 w_2 + x_1 x_2 + y_1 y_2 + z_1 z_2 \quad w_1 x_2 + x_1 w_2 + y_1 z_2 - z_1 y_2 \quad w_1 y_2 + y_1 w_2 + z_1 x_2 - x_1 z_2 \quad w_1 z_2 + z_1 w_2 + x_1 y_2 - y_1 x_2]
+$$
+q_1 q_2 = [w_1 w_2 - x_1 x_2 - y_1 y_2 - z_1 z_2 \quad w_1 x_2 + x_1 w_2 + y_1 z_2 - z_1 y_2 \quad w_1 y_2 + y_1 w_2 + z_1 x_2 - x_1 z_2 \quad w_1 z_2 + z_1 w_2 + x_1 y_2 - y_1 x_2]^T
+$$
 
+因此有
+$$
 q q^{-1} = 1
 $$
 
