@@ -59,11 +59,9 @@ $$
 
 通常用world系向body系的旋转 $`q(q_{WB})`$ 表示姿态
 
-！！！注意，“坐标”本身包含着“相对”的含义，因此对于world系和body系来说，分别理解 $`p(\vec{r}) \rightarrow q p(\vec{r}) q^{-1}`$ 的含义应该为：
+！！！注意，“坐标”本身包含着“相对”的含义，因此对于world系和body系来说，理解 $`q p(\vec{r}) q^{-1}`$ 的含义应该为：
 
-world系和body系重合时，world系下有坐标 $`\vec{r}`$ →→→ 机体进行了旋转 →→→ 原坐标仍在world系下表示变为 $`p(\vec{r}) \rightarrow q p(\vec{r}) q^{-1}`$
-
-world系和body系重合时，body系下有坐标 $`\vec{r}`$ →→→ 机体进行了旋转 →→→ 原坐标仍在body系下表示，相对关系未变，还是 $`\vec{r}`$ →→→ $`p(\vec{r}) \rightarrow q p(\vec{r}) q^{-1}`$ 表示body系下的坐标换到world系下表示
+world系和body系重合时，world系和body系下都有坐标 $`\vec{r}`$。机体进行旋转后，原坐标相对world系表示变为 $`q p(\vec{r}) q^{-1}`$；原坐标相对body系关系未变还是 $`\vec{r}`$，因此 $`q p(\vec{r}) q^{-1}`$ 表示body系到world系的坐标变换
 
 
 
